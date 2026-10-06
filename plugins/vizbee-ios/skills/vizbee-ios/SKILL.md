@@ -49,5 +49,11 @@ the cast icon APIs. Still open the live `*.html` page to confirm the current ver
 exact symbols before editing — if the doc disagrees with the reference, the **doc wins**;
 apply from the doc and update the reference in the same change.
 
+For **custom card UI** (a customer wants Vizbee's connect/cast flow in their own card
+layout/branding instead of the built-in cards), use **VZBCards** (`VizbeeCardsKit`). This is
+not yet on developer.vizbee.tv, so the reference carries the knowledge:
+[references/ios-custom-cards.md](references/ios-custom-cards.md) — SDK + version coupling,
+`VizbeeCards.register(card:)`, the `VZBCard<ViewModel>` pattern, and theming via `setUIConfig`.
+
 The full step loop (discover → read docs → gather inputs → apply slice → verify → report)
 is in [references/workflow.md](references/workflow.md).
