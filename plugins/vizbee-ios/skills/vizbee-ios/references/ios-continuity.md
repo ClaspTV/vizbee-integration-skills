@@ -106,6 +106,35 @@ navigationItem.rightBarButtonItems = [existingItem, castItem]
 `UINavigationItem` if the screen is UIKit-hosted. If the app can't put an icon on the home
 screen, it must integrate the **Cast Bar** instead (next slice).
 
+Also add a cast button to the **player screen** (same `createCastButton()` call), so a user
+watching on the phone can hand off to the TV.
+
+## Start casting a video — SmartPlay (`.../integration-guide/cast-videos.html`)
+
+SmartPlay is the standard way to start a video from a selection: it shows the device picker
+when needed and decides TV vs phone. Build a `VZBRequest` from the app's video object and its
+GUID, then call `Vizbee.smartPlay`:
+
+```swift
+let request = VZBRequest(appVideo: appVideo, guid: guid, startPosition: 0)
+request.didPlay(onTV:    { screen in /* now playing on the TV */ })
+request.doPlay(onPhone:  { status in /* keep playing on the phone */ })
+Vizbee.smartPlay(request, presenting: presentingViewController)
+```
+
+For this to start the video on the TV, the app adapter's `getVZBStreamInfo(...)` must return a
+real `VZBVideoStreamInfo` (stream URL, DRM, …). Returning failure there tells the SDK **not**
+to start playback — only do that if the app starts TV playback by some other means of its own.
+
+## SmartHelp (`.../integration-guide/smart-prompt.html`)
+
+SmartHelp surfaces contextual connect/help prompts. The no-options form just takes a
+presenting view controller, typically called from the home screen's `viewDidAppear`:
+
+```swift
+Vizbee.smartHelp(presentingViewController)   // returns Bool; the SDK decides when to show
+```
+
 ## Verify (this slice)
 - App compiles and launches with the SDK linked.
 - No crash on `Vizbee.start` (wrong/empty App ID is the usual cause).
