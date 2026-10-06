@@ -1,0 +1,14 @@
+{
+  "name": "vizbee-integration",
+  "owner": {
+    "name": "Vizbee",
+    "url": "https://github.com/ClaspTV"
+  },
+  "plugins": [
+    {
+      "name": "vizbee-integration",
+      "source": "./plugins/vizbee-integration",
+      "description": "Integrate a Vizbee product (Continuity, HomeSSO, ...) into a host app on any platform (iOS, Android, ...), driven by the canonical steps on developer.vizbee.tv."
+    }
+  ]
+}

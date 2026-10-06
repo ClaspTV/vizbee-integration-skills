@@ -1,0 +1,9 @@
+{
+  "name": "vizbee-integration",
+  "description": "Integrate a Vizbee product (Continuity, HomeSSO, ...) into a host app on any platform (iOS, Android, ...), driven by the canonical steps on developer.vizbee.tv.",
+  "author": {
+    "name": "Vizbee",
+    "email": "support@vizbee.tv"
+  },
+  "homepage": "https://github.com/ClaspTV/vizbee-integration-skills"
+}
