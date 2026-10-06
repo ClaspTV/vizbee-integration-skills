@@ -26,8 +26,10 @@ symbols or URLs, which change between VizbeeKit releases.
 4. **Gather required inputs first** — above all the **Vizbee App ID** (`vzbNNNNNNN`, from
    the Vizbee console). Never invent one. If the user doesn't have it, say where to get it
    and stop at the point init needs it.
-5. **Mark every edit** with `// [Vizbee Begin] … // [Vizbee End]` (the convention the docs
-   use) so the integration is reviewable and reversible.
+5. **Keep edits clean and minimal.** This is a customer codebase — match its style, and add
+   only short, developer-friendly comments where they genuinely help. Do **not** wrap
+   insertions in `[Vizbee Begin]/[Vizbee End]` marker comments or leave long explanatory
+   blocks; rely on git to show what changed.
 6. **Satisfy required protocols honestly.** `VZBAppAdapterDelegate` has four required
    methods; during an init/cast-icon slice, stub the video ones with the failure callback
    and a `// [Vizbee] TODO (cast-videos slice)` note — never leave the protocol unsatisfied,

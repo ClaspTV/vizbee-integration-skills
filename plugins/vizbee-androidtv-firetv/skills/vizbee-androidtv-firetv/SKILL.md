@@ -28,7 +28,7 @@ docs**; never rely on memory.
 5. **Gather inputs first** — the **Vizbee App ID** (`vzbNNNNNNN`). Never invent one.
 6. **Where things go:** init in the `Application`/leanback entry; deep-link and playback
    handlers wired to the app's player; Gradle dependency + manifest.
-7. **Mark every edit** with `// [Vizbee Begin] … // [Vizbee End]`. Stub not-yet-implemented
+7. **Keep edits clean and minimal** — match the app's style, short comments only where they help, no marker comments. Stub not-yet-implemented
    handlers with `// [Vizbee] TODO (<slice>)`; never fake success.
 8. **Verify:** build and deploy to a **real Fire TV / Android TV device** (emulators can't do
    cross-device discovery), confirm init and the targeted flow. Report changed files, docs

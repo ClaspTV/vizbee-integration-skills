@@ -28,8 +28,8 @@ docs**; never rely on memory for versions or symbols.
 5. **Gather inputs first** — the **Vizbee App ID** (`vzbNNNNNNN`). Never invent one.
 6. **Init** high in the app lifecycle (`App.tsx`/root mount, or native delegates). Cast UI
    uses the SDK's RN components.
-7. **Mark every edit** with `// [Vizbee Begin] … // [Vizbee End]` (JS and native). Stub
-   required callbacks honestly with `// [Vizbee] TODO (<slice>)`; never fake success.
+7. **Keep edits clean and minimal** (JS and native) — match the app's style, short comments
+   only where they help, no marker comments. Stub required callbacks honestly; never fake success.
 8. **Verify:** install pods / Gradle sync, build both platforms, launch, no crash at init,
    cast icon renders. Discovery/casting needs a **real device**. Report changed files, docs
    followed, what you verified, next steps.

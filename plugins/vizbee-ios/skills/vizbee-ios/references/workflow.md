@@ -28,12 +28,13 @@ the user asked for.
 ## 4. Apply the slice
 - Add the SDK dependency exactly as the setup doc specifies for this app's dependency
   manager.
-- Make the code edits for the slice. **Wrap every insertion** in
-  `// [Vizbee Begin] … // [Vizbee End]` (or the platform comment syntax).
+- Make the code edits for the slice. Keep them clean and minimal — match the app's style
+  and add only short comments where they help; **no `[Vizbee Begin]/[Vizbee End]` markers or
+  long explanatory blocks** (they look out of place in a customer codebase; git shows the diff).
 - For required-but-not-yet-implemented delegate methods (e.g. the iOS
   `VZBAppAdapterDelegate` video methods during an init-only slice), implement them as
-  honest stubs that call the failure callback, with a `// [Vizbee] TODO (cast-videos slice)`
-  note — never leave the protocol unsatisfied, and never fake success.
+  honest stubs that call the failure callback — never leave the protocol unsatisfied, and
+  never fake success.
 
 ## 5. Verify
 - Build. Fix compile/link errors against the doc (often a missing entitlement, a manual

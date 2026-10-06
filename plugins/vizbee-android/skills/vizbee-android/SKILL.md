@@ -26,7 +26,7 @@ the docs**; never rely on memory for versions or symbols.
 5. **Where things go:** init in the `Application` subclass `onCreate`; dependency via Gradle
    (Maven coords from the setup doc); permissions/services in `AndroidManifest.xml`; cast
    icon on the home `Activity`/toolbar.
-6. **Mark every edit** with `// [Vizbee Begin] … // [Vizbee End]`. Stub not-yet-implemented
+6. **Keep edits clean and minimal** — match the app's style, short comments only where they help, no marker comments. Stub not-yet-implemented
    required callbacks with a failure/no-op + `// [Vizbee] TODO (<slice>)`, never faking success.
 7. **Verify:** Gradle build, launch, no crash at init, cast icon renders. Discovery/casting
    needs a **real device** on the same Wi-Fi as a Vizbee TV (emulators can't discover).

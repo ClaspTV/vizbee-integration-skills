@@ -25,8 +25,8 @@ layer — **always fetch the docs**; never rely on memory.
 4. **Gather inputs first** — the **Vizbee App ID** (`vzbNNNNNNN`). Never invent one.
 5. **Where things go:** init early in the main scene / `init()`; wire the Vizbee
    `.brs`/SceneGraph nodes per the doc; handle sign-in and video-start callbacks.
-6. **Mark every edit** with `' [Vizbee Begin] … ' [Vizbee End]` (BrightScript comments). Stub
-   not-yet-implemented handlers with `' [Vizbee] TODO (<slice>)`; never fake success.
+6. **Keep edits clean and minimal** — match the channel's style, short comments only where
+   they help, no marker comments. Stub not-yet-implemented handlers honestly; never fake success.
 7. **Verify:** sideload to a **real Roku device** (the emulator can't do cross-device
    discovery), confirm init and the targeted flow. Report changed files, docs followed, what
    you verified, next steps.

@@ -30,8 +30,8 @@ The skill is an orchestration + guardrail layer, not a copy of the docs:
 2. Fetch the exact doc pages — the site renders real HTML at the **`.html` suffix**.
 3. Gather required inputs — above all the **Vizbee App ID** (`vzbNNNNNNN`).
 4. Apply the smallest requested slice (Continuity order: Setup → Init → Cast Icon → Cast
-   Bar → Cast Videos → Smart Prompt → Analytics), wrapping every edit in
-   `// [Vizbee Begin] … // [Vizbee End]`.
+   Bar → Cast Videos → Smart Prompt → Analytics) with clean, minimal edits that match the
+   app's style — no marker comments or verbose blocks.
 5. Build, verify, and report what still needs a device or the Vizbee console.
 
 The `vizbee-ios` skill additionally ships a **distilled fast path** (verified against
@@ -86,8 +86,8 @@ Add a sibling plugin (e.g. `plugins/vizbee-android/`) with the same shape:
    homepage).
 2. `plugins/<name>/skills/<name>/SKILL.md` — a platform-focused orchestrator. Keep the same
    operating rules as `vizbee-ios` (read docs via the `.html` suffix, gather the App ID
-   first, follow the Setup→…→Analytics order, mark edits with `[Vizbee Begin]/[Vizbee End]`,
-   satisfy required callbacks honestly, build & verify, don't commit).
+   first, follow the Setup→…→Analytics order, keep edits clean and minimal with no marker
+   comments, satisfy required callbacks honestly, build & verify, don't commit).
 3. `plugins/<name>/skills/<name>/references/doc-map.md` — the platform's doc paths on
    developer.vizbee.tv.
 4. Register the plugin in `.claude-plugin/marketplace.json`.
