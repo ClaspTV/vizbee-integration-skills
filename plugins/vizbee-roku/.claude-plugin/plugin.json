@@ -1,0 +1,6 @@
+{
+  "name": "vizbee-roku",
+  "description": "Integrate Vizbee into a Roku (BrightScript/SceneGraph) app, driven by the canonical steps on developer.vizbee.tv.",
+  "author": { "name": "Vizbee", "email": "support@vizbee.tv" },
+  "homepage": "https://github.com/ClaspTV/vizbee-integration-skills"
+}

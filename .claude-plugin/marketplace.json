@@ -6,9 +6,29 @@
   },
   "plugins": [
     {
-      "name": "vizbee-integration",
-      "source": "./plugins/vizbee-integration",
-      "description": "Integrate a Vizbee product (Continuity, HomeSSO, ...) into a host app on any platform (iOS, Android, ...), driven by the canonical steps on developer.vizbee.tv."
+      "name": "vizbee-ios",
+      "source": "./plugins/vizbee-ios",
+      "description": "Integrate a Vizbee product (Continuity casting, HomeSSO sign-in, ...) into an iOS app, driven by developer.vizbee.tv."
+    },
+    {
+      "name": "vizbee-android",
+      "source": "./plugins/vizbee-android",
+      "description": "Integrate a Vizbee product into an Android app, driven by developer.vizbee.tv. (doc-driven starter)"
+    },
+    {
+      "name": "vizbee-js",
+      "source": "./plugins/vizbee-js",
+      "description": "Integrate a Vizbee product into a React Native / JavaScript app, driven by developer.vizbee.tv. (doc-driven starter)"
+    },
+    {
+      "name": "vizbee-roku",
+      "source": "./plugins/vizbee-roku",
+      "description": "Integrate Vizbee into a Roku (BrightScript/SceneGraph) app, driven by developer.vizbee.tv. (doc-driven starter)"
+    },
+    {
+      "name": "vizbee-androidtv-firetv",
+      "source": "./plugins/vizbee-androidtv-firetv",
+      "description": "Integrate Vizbee into an Android TV / Fire TV app, driven by developer.vizbee.tv. (doc-driven starter)"
     }
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "name": "vizbee-androidtv-firetv",
+  "description": "Integrate Vizbee into an Android TV / Fire TV app, driven by the canonical steps on developer.vizbee.tv.",
+  "author": { "name": "Vizbee", "email": "support@vizbee.tv" },
+  "homepage": "https://github.com/ClaspTV/vizbee-integration-skills"
+}

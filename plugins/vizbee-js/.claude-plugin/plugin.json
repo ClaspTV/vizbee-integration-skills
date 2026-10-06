@@ -1,0 +1,6 @@
+{
+  "name": "vizbee-js",
+  "description": "Integrate a Vizbee product into a React Native / JavaScript app, driven by the canonical steps on developer.vizbee.tv.",
+  "author": { "name": "Vizbee", "email": "support@vizbee.tv" },
+  "homepage": "https://github.com/ClaspTV/vizbee-integration-skills"
+}

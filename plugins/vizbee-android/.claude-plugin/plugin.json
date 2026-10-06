@@ -1,0 +1,6 @@
+{
+  "name": "vizbee-android",
+  "description": "Integrate a Vizbee product (Continuity casting, HomeSSO sign-in, ...) into an Android app, driven by the canonical steps on developer.vizbee.tv.",
+  "author": { "name": "Vizbee", "email": "support@vizbee.tv" },
+  "homepage": "https://github.com/ClaspTV/vizbee-integration-skills"
+}
