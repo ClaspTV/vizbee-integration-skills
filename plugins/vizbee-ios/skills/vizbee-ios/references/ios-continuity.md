@@ -92,9 +92,8 @@ Required by Google's guidelines on the home screen. Two options:
 Vizbee.addCastIcon(toNavigationItem: navigationItem, withViewController: self)
 ```
 
-**B. Build the button yourself** (e.g. to size it, or to keep an existing bar button). This
-is what the TruthSocialStreaming integration uses, placing the cast icon beside the app's
-existing nav button:
+**B. Build the button yourself** (e.g. to size it, or to keep an existing bar button) —
+place the cast icon beside the app's existing nav button:
 ```swift
 let castButton = Vizbee.createCastButton()
 castButton.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
